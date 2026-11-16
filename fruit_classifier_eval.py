@@ -21,3 +21,5 @@ mse = np.mean((w_true - w_pred) ** 2)
 print("Predicted:", y_pred)
 print("Accuracy:", accuracy)
 print("MSE:", mse)
+wrong_samples = np.where(y_pred != y_test)[0]
+print("Wrongly predicted sample indexes:", wrong_samples)
